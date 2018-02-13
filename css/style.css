@@ -1,0 +1,13 @@
+section {
+  width: 380px;
+}
+label,
+input {
+  display: block;
+}
+input {
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding: 15px;
+  
+}
