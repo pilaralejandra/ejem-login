@@ -8,13 +8,62 @@
   </head>
   <body>
     <section>
+      <form class="search" action="index.html" method="post">
+        <input type="search" name="search" id="search">
+
+      </form>
+    </section>
+    <section>
       <form action="#" method="post">
+        <!-- <div class="input-group">
+          <label for="name">Name</label>
+          <input type="text" name="name" placeholder="Your name" >
+        </div>
+        <div class="input-group">
+          <label for="Lastname"></label>
+          <input type="text" name="lastname" placeholder="Your lastname">
+        </div> -->
         <label for="username">Username</label>
         <input type="text" name="username" id="username" placeholder="Pick a user name">
         <label for="email">Email</label>
         <input type="email" name="email" id="email" placeholder="you@example.com">
         <label for="pass">Password</label>
         <input type="password" name="pass" id="pass" placeholder="create password">
+
+        <fieldset>
+          <legend>Select your sex</legend>
+          <input type="radio" name="sex" id="fem" value="f">
+          <label for="fem">Female</label>
+          <input type="radio" name="sex" id="male" value="m">
+          <label for="male">Male</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Select your sex</legend>
+          <input type="checkbox" name="sex" id="fem" value="1">
+          <label for="fem">Female</label>
+          <input type="checkbox" name="sex" id="male" value="2">
+          <label for="male">Male</label>
+        </fieldset>
+
+        <label for="birthday">Select your birthday</label>
+        <input type="date" name="birthday" id="birthday">
+
+        <label for="fb">Facebook URL</label>
+        <input type="url" name="fb" id="fb">
+
+        <label for="tel">Phone</label>
+        <input type="tel" name="tel" id="tel">
+
+        <label for="awake">Awake Time</label>
+        <input type="time" name="awake" id="awake">
+
+        <label for="service">Grade our service</label>
+        <input type="range" name="service" value="service" min="5" max="20" step="2">
+
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age">
+
         <span>Use at least one letter, one numeral and seven characters.</span>
         <button type="submit" name="button">Login</button>
       </form>
