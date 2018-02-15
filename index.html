@@ -8,12 +8,17 @@
   </head>
   <body>
     <section>
+      <!-- Form for seach input -->
       <form class="search" action="index.html" method="post">
+        <label for="search">Put someyhing nice to search</label>
         <input type="search" name="search" id="search">
-
       </form>
+
     </section>
     <section>
+      <!-- Form for the rest of the imput tags -->
+      <!-- We have to use this enctype type to be able to send pictures and
+       other data usign se file input tag -->
       <form action="#" method="post" enctype="multipart/form-data">
         <!-- <div class="input-group">
           <label for="name">Name</label>
@@ -23,53 +28,63 @@
           <label for="Lastname"></label>
           <input type="text" name="lastname" placeholder="Your lastname">
         </div> -->
+        <!-- Text input tag -->
         <label for="username">Username</label>
         <input type="text" name="username" id="username" placeholder="Pick a user name">
+        <!-- Email input tag -->
         <label for="email">Email</label>
         <input type="email" name="email" id="email" placeholder="you@example.com">
+        <!-- Password input tag -->
         <label for="pass">Password</label>
         <input type="password" name="pass" id="pass" placeholder="create password">
-
+        <span>Use at least one letter, one numeral and seven characters.</span>
+        <!-- File input tag -->
         <label for="avatar">Upload your picture</label>
-        <!-- <input type="file" name="avatar" id="avatar" accept="image/jpeg" multiple> checar este multiple -->
+        <input type="file" name="avatar" id="avatar" accept="image/jpeg" multiple>
+        <!-- checar este multiple -->
 
-
-
+        <!-- Fieldset it's for agroup radio and chekbox input tags -->
         <fieldset>
+          <!-- Legend it's the title of my fieldet -->
           <legend>Select your sex</legend>
+          <!-- Radio input tags -->
           <input type="radio" name="sex" id="fem" value="f">
           <label for="fem">Female</label>
           <input type="radio" name="sex" id="male" value="m">
           <label for="male">Male</label>
+          <!-- You have to set the same name for each one of the radio group
+          in fieldset, you're goint to know each one by they're id value-->
         </fieldset>
 
         <fieldset>
           <legend>Select your sex</legend>
+          <!-- Checkbox input tag -->
           <input type="checkbox" name="sex" id="fem" value="1">
           <label for="fem">Female</label>
           <input type="checkbox" name="sex" id="male" value="2">
           <label for="male">Male</label>
+          <!-- Same rules apply for checkboxes-->
         </fieldset>
-
+        <!-- Date input tag -->
         <label for="birthday">Select your birthday</label>
         <input type="date" name="birthday" id="birthday">
-
+        <!-- URL input tag -->
         <label for="fb">Facebook URL</label>
         <input type="url" name="fb" id="fb">
-
+        <!-- Tel inut tag -->
         <label for="tel">Phone</label>
         <input type="tel" name="tel" id="tel">
-
+        <!-- Time input tag -->
         <label for="awake">Awake Time</label>
         <input type="time" name="awake" id="awake">
-
+        <!-- Range input tag -->
         <label for="service">Grade our service</label>
         <input type="range" name="service" value="service" min="5" max="20" step="2">
-
+        <!-- Number input tag -->
         <label for="age">Age</label>
         <input type="number" name="age" id="age">
 
-        <span>Use at least one letter, one numeral and seven characters.</span>
+        <!-- Button for submit all variable-value pairs to our target -->
         <button type="submit" name="button">Login</button>
       </form>
     </section>
