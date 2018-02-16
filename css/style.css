@@ -3,8 +3,8 @@ section {
   justify-content: center;
 }
 form {
-  width: 380px;
-  /* border: 1px solid black; */
+  flex-basis: 380px;
+  border: 1px solid black;
   display: flex;
   flex-direction: column;
 }
@@ -13,18 +13,20 @@ label {
 }
 
 input {
+  flex-basis: 15%;
   border-radius: 5px;
   border: 1px solid gray;
-  padding: 15px;
+  padding: 10px;
   margin-top: 5%;
 }
-
-.two-columns {
-  display: flex;
+.input-group {
+  border: 1px solid gray;
 }
+.input-group input {
+  border: 1px solid yellow;
+  background-color: red;
+  flex-basis: 20%;
 
-.two-columns {
-  width: 41.5%
 }
  input:last-of-type {
    margin-bottom: auto;
